@@ -3,7 +3,42 @@
     <meta charset="utf-8">
     <title>Micronutrients</title>
     <link href="./css/style.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
   </head>
   <body>
+    <header class="header">
+      <div class="container">
+        <a href="#"><img class="personal-logo" src="../img/g.png" width="70" height="70" alt=""></a>
+      </div>
+      <div class="header__wrapper">
+        <p class="header__text">Узнайте все о совместимости ваших витаминов, микро- и макроэлементов</p>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <p class="main__title">Выберите необходимые элементы</p>
+        <form action="select1.php" method="post" class="form">
+          <fieldset>
+            <input list="elements" class="form__input">
+              <datalist id="elements">
+                <option value="A"></option>
+                <option value="B1"></option>
+                <option value="B2"></option>
+              </datalist>
+          </fieldset>
+          <fieldset>
+            <input list="elements" class="form__input">
+              <datalist id="elements">
+                <option value="A"></option>
+                <option value="B1"></option>
+                <option value="B2"></option>
+              </datalist>
+          </fieldset>
+          <fieldset>
+            <input type="submit" value="Показать" class="form__btn">
+          </fieldset>
+        </form>
+      </div>
+    </main>
   </body>
 </html>
