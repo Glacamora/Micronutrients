@@ -1,0 +1,54 @@
+main {
+  background-image: url("../img/bgrnd.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+  background-size: auto;
+  }
+
+.main {
+  max-width: 1160px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+.main__title {
+  text-align: center;
+  padding-top: 100px;
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-size: 30px;
+  font-weight: 300;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/blue_underline.png");
+    top: 95%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 64px;
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.main__info {
+  font-size: 16px;
+  max-width: 1160px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 30px;
+
+  span {
+    font-size: 20px;
+    color: #00a1e7;
+  }
+}
