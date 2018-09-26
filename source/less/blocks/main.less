@@ -52,3 +52,35 @@ main {
     color: #00a1e7;
   }
 }
+
+.main__description-name {
+  position: relative;
+  color: #52a7c1;
+  font-weight: 600;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-color: #52a7c1;
+    width: 100%;
+    height: 1px;
+    top: 25px;
+    left: 0;
+  }
+}
+
+.main__description-text {
+  font-weight: 300;
+
+  &_positive {
+    color: #62ff62;
+  }
+
+  &_neutral {
+    color: #ffff4e;
+  }
+
+  &_negative {
+    color: #ff3b3b;
+  }
+}
