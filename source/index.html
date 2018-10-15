@@ -21,8 +21,8 @@
         <p class="main__title">Выберите необходимые элементы</p>
         <form action="select1.php" method="post" class="form">
           <fieldset>
-            <input list="elements" class="form__input">
-              <datalist id="elements">
+            <input list="elementList1" id="element1" class="form__input">
+              <datalist id="elementList1">
                 <option value="A"></option>
                 <option value="B1"></option>
                 <option value="B2"></option>
@@ -30,11 +30,12 @@
                 <option value="B4"></option>
                 <option value="B5"></option>
                 <option value="B6"></option>
+                <option value="C"></option>
               </datalist>
           </fieldset>
           <fieldset>
-            <input list="elements" class="form__input">
-              <datalist id="elements">
+            <input list="elementList2" id="element2" class="form__input">
+              <datalist id="elementList2">
                 <option value="A"></option>
                 <option value="B1"></option>
                 <option value="B2"></option>
@@ -42,6 +43,7 @@
                 <option value="B4"></option>
                 <option value="B5"></option>
                 <option value="B6"></option>
+                <option value="C"></option>
               </datalist>
           </fieldset>
           <fieldset>
@@ -49,8 +51,8 @@
           </fieldset>
         </form>
         <div class="main__description">
-          <p><span class="main__description-name">Совместимость: </span><span class="main__description-text main__description-text_positive main__description-text_neгtral main__description-text_negative">Отрицательно</span></p>
-          <p><span class="main__description-name">Описание взаимодействия: </span><span class="main__description-text">В6 тормозит переход витамина В1 в биологически активное состояние.</span></p>
+          <p><span class="main__description-name">Совместимость: </span><span class="main__description-text main__compatibility"></span></p>
+          <p><span class="main__description-name">Описание взаимодействия: </span><span class="main__description-text main__interaction"></span></p>
         </div>
       </section>
       <p class="main__info"><span>*</span>Сайт создан исключительно с познавательной целью и информирует о совместимости/взаимодействии витаминов, макро- и микроэлементов между собой, облегчает поиск и подбор, и не заменяет консультации врача.
@@ -63,5 +65,6 @@
         <a href="#"><img class="footer__logo" src="../img/g.png" width="70" height="70" alt=""></a>
       </section>
     </footer>
+    <script src="./js/scripts.min.js"></script>
   </body>
 </html>

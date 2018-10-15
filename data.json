@@ -1,0 +1,17 @@
+[
+  {
+    "name": ["A","C"],
+    "compatibility": "Положительная",
+    "descrition": "Витамин С защищает А от окисления"
+  },
+  {
+    "name": ["A","B1"],
+    "compatibility": "Нейтральные",
+    "descrition": ""
+  },
+  {
+    "name": ["A","B2"],
+    "compatibility": "Нейтральные",
+    "descrition": ""
+  }
+]

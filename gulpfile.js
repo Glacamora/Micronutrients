@@ -14,6 +14,11 @@ var uglify = require("gulp-uglify");
 var htmlmin = require("gulp-htmlmin");
 var concat = require('gulp-concat');
 
+gulp.task("data", function() {
+  gulp.src("data.json")
+    .pipe(gulp.dest("build"));
+});
+
 gulp.task("style", function() {
   gulp.src("source/less/style.less")
     .pipe(plumber())
@@ -30,7 +35,7 @@ gulp.task("style", function() {
 gulp.task("js", function() {
   gulp.src("source/js/*.js")
     .pipe(gulp.dest("build/js/"))
-    .pipe(uglify())
+    //.pipe(uglify())
     .pipe(concat("all.js"))
     .pipe(rename("scripts.min.js"))
     .pipe(gulp.dest("build/js"));
@@ -63,6 +68,7 @@ gulp.task("build", function (done) {
     "html",
     "style",
     "js",
+    "data",
     done
   );
 });
