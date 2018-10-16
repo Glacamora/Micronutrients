@@ -53,7 +53,7 @@ function showInformation(vitamin){
     compatibility.classList.add("main__description-text_neitral");
   }
 
-  if(vitamin.compatibility === "Отрицательно"){
+  if(vitamin.compatibility === "Отрицательная"){
     compatibility.classList.add("main__description-text_negative");
   }
 }
